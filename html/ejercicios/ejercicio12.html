@@ -1,0 +1,94 @@
+<!-- Ejercicio 12: Agregar un video nativo, de youtube y un audio -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="icon" href="./favicon.ico" type="image/ico" />
+  </head>
+  <body>
+    <header>
+      <h1>Lara_vel.dev web</h1>
+      <nav>
+        <h2>Logo</h2>
+        <ul>
+          <li><a href="#">Sobre mí</a></li>
+          <li><a href="#">Habilidades</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="./ejercicio10.html" target="_blank">Index</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Contacto</h2>
+      <form action="">
+        <div>
+          <label for="nombre">Nombre: </label>
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            placeholder="Ingresa tu nombre"
+          />
+        </div>
+        <div>
+          <label for="apellidop">Apellido paterno: </label>
+          <input
+            type="text"
+            name="apellidop"
+            id="apellidop"
+            placeholder="Ingresa tu apellido paterno"
+          />
+        </div>
+        <div>
+          <label for="apellidom">Apellido materno: </label>
+          <input
+            type="text"
+            name="apellidom"
+            id="apellidom"
+            placeholder="Ingresa tu apellido materno"
+          />
+        </div>
+        <div>
+          <label for="correo">Correo: </label>
+          <input
+            type="email"
+            name="correo"
+            id="correo"
+            placeholder="Ingresa tu correo"
+          />
+        </div>
+        <div>
+          <label for="edad">Edad: </label>
+          <input
+            type="number"
+            name="edad"
+            id="edad"
+            placeholder="18"
+            min="18"
+            max="99"
+          />
+        </div>
+        <div>
+          Género:
+          <input type="radio" name="genero" id="hombre" />
+          <label for="hombre">Hombre</label>
+          <input type="radio" name="genero" id="mujer" />
+          <label for="mujer">Mujer</label>
+          <input type="radio" name="genero" id="otro" />
+          <label for="mujer">Otro</label>
+        </div>
+        <div>
+          <label for="motivo">Motivo de contacto: </label>
+          <br />
+          <textarea name="motivo" id="motivo" cols="20" rows="10"></textarea>
+        </div>
+        <input type="submit" value="Enviar" />
+      </form>
+    </main>
+    <footer>
+      <p>&copy; Daniela Lara Lozano 2024</p>
+    </footer>
+  </body>
+</html>

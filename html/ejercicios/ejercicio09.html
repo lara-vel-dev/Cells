@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Multimedia</title>
     <link rel="icon" href="./favicon.ico" type="image/ico" />
-</head>
-<body>
+  </head>
+  <body>
     <header>
       <h1>Lara_vel.dev web</h1>
       <nav>
@@ -22,21 +22,32 @@
     </header>
     <main>
       <h2>Multimedia</h2>
-        <section>
-            <article>
-              <h3>Video nativo</h3>
-            </article>
-        </section>
-        <section>
-            <article>
-              <h3>Audio nativo</h3>
-            </article>
-        </section>
-        <section>
-            <article>
-              <h3>Video de YouTube</h3>
-            </article>
-        </section>
+      <section>
+        <article>
+          <h3>Video nativo</h3>
+          <video controls width="320" height="250">
+            <source src="../ejemplos/risa.mp4" />
+          </video>
+        </article>
+      </section>
+      <br />
+      <section>
+        <article>
+          <h3>Audio nativo</h3>
+          <audio src="../ejemplos/code.mp3" controls></audio>
+        </article>
+      </section>
+      <section>
+        <article>
+          <h3>Video de YouTube</h3>
+        </article>
+        <iframe
+          src="https://www.youtube.com/embed/XeSu9fBJ2sI"
+          frameborder="0"
+          width="320"
+          height="250"
+        ></iframe>
+      </section>
     </main>
-</body>
+  </body>
 </html>

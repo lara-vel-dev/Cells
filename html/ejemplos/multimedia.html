@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multimedia</title>
+  </head>
+  <body>
+    <h1>Multimedia en HTML</h1>
+    <!-- Imágenes -->
+    <h2>Imágenes</h2>
+    <!-- Forma 1 -->
+    <img
+      src="https://imgs.search.brave.com/306n6E-34FcSL7unGd-GJ_dH9uSfvshfAgPBuIQ-kdk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzk0L2U4/L2ZkLzk0ZThmZGFj/OGNhMjk2YzYwNjhl/OGM5MTg1MmZjNmYy/LmpwZw"
+      alt="Imagen de perrito con su peluche"
+      title="Perrito con su peluche"
+      width="250"
+      height="250"
+    />
+
+    <!-- Forma 2 -->
+    <img
+      src="./cat.png"
+      alt="Imagen de gato"
+      width="350"
+      height="250"
+      title="Gato"
+    />
+
+    <!-- Videos -->
+    <h2>Videos</h2>
+    <!-- Forma 1 -->
+    <iframe
+      width="350"
+      height="250"
+      src="https://www.youtube.com/embed/QMbx0dTWJIQ"
+    >
+    </iframe>
+
+    <!-- Forma 2 -->
+    <video width="350" height="250">
+      <source src="./risa.mp4" type="video/mp4" />
+      Tu navegador no es compatible
+    </video>
+
+    <!-- Forma 3 -->
+    <video src="./risa.mp4" width="350" height="250" controls muted>
+      Tu navegador no es compatible
+    </video>
+
+    <!-- Audio -->
+    <h2>Audio</h2>
+    <audio src="./code.mp3" controls>Tu navegador no es compatible</audio>
+
+    <!-- Figure y figcaption -->
+    <h2>Figure y Figcaption</h2>
+    <figure>
+      <img
+        src="./cat.png"
+        alt="Imagen de gato"
+        width="350"
+        height="250"
+        title="Gato"
+      />
+      <figcaption>Gato</figcaption>
+    </figure>
+  </body>
+</html>

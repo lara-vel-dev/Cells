@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <a href="./index.html">Menú principal</a>
+    <h1>Formularios</h1>
+    <form method="GET" enctype="text/plain" autocomplete="off">
+      <fieldset>
+        <legend>Datos personales</legend>
+        <div>
+          <label for="nombre"> Nombre: </label>
+          <input
+            autofocus
+            type="text"
+            name="nombre"
+            id="nombre"
+            placeholder="Ingresa un nombre"
+          />
+        </div>
+        <div>
+          <label for="edad">Edad: </label>
+          <input
+            type="number"
+            name="edad"
+            id="edad"
+            placeholder="0"
+            min="0"
+            max="99"
+          />
+        </div>
+        <div>
+          <label for="correo">Correo: </label>
+          <input
+            type="email"
+            name="correo"
+            id="correo"
+            placeholder="Ingresa tu correo"
+          />
+        </div>
+        <div>
+          <label for="pswd">Contraseña: </label>
+          <input
+            type="password"
+            name="pswd"
+            id="pswd"
+            placeholder="Ingresa tu contraseña"
+          />
+        </div>
+        <div>
+          <p>Género</p>
+          <input type="radio" name="genero" value="hombre" id="hombre" />
+          <label for="hombre">Hombre</label>
+          <input type="radio" name="genero" value="mujer" id="mujer" />
+          <label for="mujer">Mujer</label>
+          <input
+            type="radio"
+            name="genero"
+            value="no-binarie"
+            id="no-binarie"
+          />
+          <label for="no-binarie">No binarie</label>
+          <input type="radio" name="genero" value="otro" id="otro" />
+          <label for="otro">Otro</label>
+        </div>
+        <div>
+          Estado:
+          <select name="estados" id="estados">
+            <option value="ags">Aguascalientes</option>
+            <option value="jls">Jalisco</option>
+            <option value="mx">México</option>
+          </select>
+        </div>
+        <div>
+          <label for="check">
+            <input type="checkbox" name="check" id="check" /> Aceptar políticas
+            de privacidad
+          </label>
+        </div>
+      </fieldset>
+      <br />
+      <label for="descripcion">Descripción: </label>
+      <textarea
+        name="descripcion"
+        id="descripcion"
+        cols="30"
+        rows="10"
+      ></textarea>
+
+      <button>Enviar</button>
+    </form>
+
+    <h2>Validaciones</h2>
+    <form action="" method="get">
+        <input type="text" minlength="3" maxlength="15" required>
+        <input pattern="[A-Za-z]+">
+        <button>Enviar</button>
+    </form>
+  </body>
+</html>

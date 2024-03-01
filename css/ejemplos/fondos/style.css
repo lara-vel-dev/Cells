@@ -1,0 +1,27 @@
+body {
+  background-image: url("https://marketplace.canva.com/EAE-xnqWvJk/1/0/1600w/canva-retro-smoke-and-round-light-desktop-wallpapers-JLofAI27pCg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: right bottom;
+  background-attachment: fixed;
+}
+
+#caja {
+  border: 5px solid black;
+  padding: 10px;
+  background-color: #2b96e2;
+  color: white;
+  text-align: center;
+  font-family: "Open Sans";
+  line-height: 50px;
+  text-transform: uppercase;
+  text-decoration: line-through;
+}
+
+p {
+    color: white;
+    text-align: justify;
+    text-indent: 15px;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+}

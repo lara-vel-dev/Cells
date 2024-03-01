@@ -1,0 +1,69 @@
+/* SELECTORES */
+
+/* Selector universal */
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Selector de etiqueta */
+h1 {
+  background-color: red;
+  color: white;
+  padding: 10;
+}
+
+a {
+  color: green;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+footer a {
+  color: blue;
+}
+
+/* Selector de ID */
+#descripcion {
+  border: 1px solid black;
+  margin: 40px;
+}
+
+#usuario form {
+  border: 3px solid black;
+  margin: 15px 0;
+  padding: 20px;
+}
+
+#usuario form * {
+  display: block;
+}
+
+/* Selector de clase */
+.texto {
+  font-size: 18px;
+  padding: 20px;
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Selector de atributo */
+input[type="text"] {
+  margin-bottom: 15px;
+  padding: 5px;
+  width: 400px;
+}
+
+input[type="submit"] {
+  background-color: green;
+  color: white;
+  padding: 15px;
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* Selector de hijo */
+#menu > li > a {
+    color: red;
+}

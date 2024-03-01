@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 1200px;
+  margin: 0px auto;
+  margin-top: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  background-color: #68c0e0;
+  width: 100%;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 45px;
+  color: #fff;
+  padding: 30px;
+}
+
+nav {
+  background-color: #000;
+  padding: 20px;
+}
+
+nav h2 {
+  color: #fff;
+  text-transform: uppercase;
+  display: inline;
+  margin-left: 20px;
+}
+
+ul {
+  display: block;
+  float: right;
+}
+
+ul li {
+  list-style: none;
+  display: inline;
+  margin-right: 30px;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+#cajas {
+  width: 70%;
+  background-color: #e1d0ff;
+  float: left;
+}
+
+#cajas .caja {
+  display: block;
+  width: 300px;
+  height: 300px;
+  background-color: #ffe09f;
+  float: left;
+  margin: 20px 55px;
+}
+
+.caja p {
+    text-align: center;
+    font-size: 22px;
+    line-height: 300px;
+    font-weight: bold;
+}
+
+aside {
+  width: 30%;
+  background-color: rgb(148, 255, 223);
+  display: block;
+  float: left;
+  height: 1341px;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    background-color: #feabe8;
+    padding: 50px 0;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.clearfix {
+  float: none;
+  clear: left;
+}

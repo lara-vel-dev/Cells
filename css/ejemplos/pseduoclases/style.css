@@ -1,0 +1,56 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul li {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+input {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* Pseudoclases */
+
+/* Selecciona el primer hijo */
+ul li:first-child {
+  color: purple;
+}
+
+/* Selecciona un hijo en específico */
+ul li:nth-child(2) {
+  color: greenyellow;
+}
+
+/* Selecciona el último hijo */
+ul li:last-child {
+  color: red;
+}
+
+/* Si el link no ha sido visitado */
+a:link {
+  color: lightblue;
+}
+
+/* Si el link ya fue visitado */
+a:visited {
+  color: lightcoral;
+}
+
+/* Cuando el mouse esté por encima */
+a:hover {
+  color: blue;
+}
+
+/* Cuando des clic */
+a:active {
+  color: green;
+}
+
+/* Para dar enfoque a un elemento en particular */
+input[type="text"]:focus {
+    border: 4px dashed tomato;
+}
+

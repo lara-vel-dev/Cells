@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Mansalva&display=swap");
+@font-face {
+  font-family: OjujuFont;
+  src: url("fonts/Ojuju/Ojuju-Regular.ttf");
+}
+
+h1 {
+  font-family: "Mansalva";
+  font-style: italic;
+
+  /* Colores */
+  /* del sistema */
+  color: aqua;
+
+  /* hexadecimales */
+  color: #6753ca99;
+
+  /* rgb */
+  color: rgb(255, 255, 1107);
+
+  /* rgba */
+  color: rgb(90, 77, 120, 0.8);
+}
+
+h2 {
+  font-family: "Comic Sans MS";
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+p {
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

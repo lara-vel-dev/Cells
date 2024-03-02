@@ -43,7 +43,7 @@ header h1 {
   font-family: HeaderFont;
   text-transform: uppercase;
   color: #71b053;
-  text-shadow: 1px 1px 1px black, 1px 1px 1px black;
+  text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;
   text-align: center;
   letter-spacing: 3px;
   margin-top: 15px;
@@ -96,6 +96,7 @@ main {
   background-color: #fff;
   margin: 50px 0;
   padding: 25px;
+  box-shadow: 2px 2px 7px 2px black;
 }
 
 .noticias h2 {
@@ -139,25 +140,106 @@ article p span {
 }
 
 .imagenes {
-    width: 90%;
-    position: absolute;
+  width: 90%;
+  position: absolute;
 }
 
-#cintas1{
-    top: 330px;
+#cintas1 {
+  top: 330px;
 }
 
-#cintas2{
-    top: 1225px;
+#cintas2 {
+  top: 1225px;
 }
 
-#cintas3{
-    top: 2120px;
+#cintas3 {
+  top: 2120px;
 }
 
 .imagenes .cinta2 {
-    position: relative;
-    left: 63%;
+  position: relative;
+  left: 63%;
+}
+
+#lateral a {
+  text-decoration: none;
+  color: #598a41;
+}
+
+.lateral_container,
+blockquote {
+  margin-left: 250px;
+  margin-top: 40px;
+  background-color: #fff;
+  width: 12%;
+  box-shadow: 1px 1px 10px 1px black;
+  padding-bottom: 20px;
+}
+
+.lateral_container .aulas {
+  padding: 20px;
+  border-bottom: 3px dotted #b6b6b6;
+}
+
+.lateral_container .aulas h3 {
+  background-color: #dbdada;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.lateral_container .aulas #sub1,
+.lateral_container .aulas #sub4 {
+  color: #282828;
+}
+.lateral_container .aulas #sub2 {
+  color: #0083fd;
+}
+.lateral_container .aulas #sub3 {
+  color: #953030;
+}
+
+.lateral_container .aulas label,
+.lateral_container .aulas input {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.lateral_container .aulas input:not(input[type="submit"]) {
+  border: 1px solid #b3b3b3;
+  width: 100%;
+  padding: 3px;
+  margin-bottom: 5px;
+}
+
+.lateral_container .aulas input[type="submit"] {
+  background-color: #598a41;
+  padding: 7px 15px;
+  color: #fff;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.lateral_container .aulas input[type="submit"]:hover {
+  background-color: #71b053;
+}
+
+.links a {
+  display: block;
+}
+
+.links a:first-child {
+  margin-top: 12px;
+}
+
+.lateral_container .aulas ul li {
+  list-style: square;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+blockquote {
+  padding: 10px;
 }
 
 .clearfix {

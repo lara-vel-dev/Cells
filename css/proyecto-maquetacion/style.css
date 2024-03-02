@@ -50,7 +50,7 @@ header h1 {
   font-size: 45px;
 }
 
-nav {
+nav, footer {
   background-color: #282828;
   width: 100%;
   text-align: center;
@@ -245,4 +245,10 @@ blockquote {
 .clearfix {
   float: none;
   clear: both;
+}
+
+footer {
+    margin-top: 40px;
+    color: #fff;
+    padding: 20px;
 }

@@ -16,8 +16,13 @@
   src: url("./fonts/FjallaOne-Regular.ttf");
 }
 
+@font-face {
+  font-family: IconFont;
+  src: url("./fonts/websymbols-regular-webfont.ttf");
+}
+
 body {
-  background-color: #eaeaea;
+  background-image: url("./img/paven.png");
 }
 
 header {
@@ -42,4 +47,29 @@ header h1 {
   letter-spacing: 3px;
   margin-top: 15px;
   font-size: 45px;
+}
+
+nav {
+  background-color: #282828;
+  width: 100%;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  border-right: 1px solid #959595;
+  padding: 10px 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+strong {
+  font-family: IconFont;
 }

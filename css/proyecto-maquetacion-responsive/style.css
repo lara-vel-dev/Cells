@@ -3,6 +3,10 @@
   font-family: Headings;
   src: url("./fonts/BebasNeue.otf");
 }
+@font-face {
+  font-family: Text;
+  src: url("./fonts/TrebuchetMS.ttf");
+}
 
 * {
   padding: 0;
@@ -11,12 +15,14 @@
   box-sizing: border-box;
 }
 
+/* Header styles */
 header {
   display: flex;
   color: #fff;
   flex-wrap: wrap;
   flex-grow: 1;
   background-color: #222;
+  width: 100vw;
   height: 70px;
   align-items: center;
   justify-content: space-around;
@@ -41,7 +47,7 @@ header {
 }
 
 .blog i {
-  animation: rotate 2s linear .3s infinite;
+  animation: rotate 2s linear 0.3s infinite;
 }
 
 #menu {
@@ -60,6 +66,76 @@ header {
   color: #fff;
   letter-spacing: 1px;
   font-size: 20px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+#menu a:hover {
+  background-color: #00b3ff;
+}
+
+/* Banner styles */
+#banner {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-image: url("./img/bakbaner.png");
+  color: #fff;
+  font-family: Headings;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+#banner h2 {
+  font-size: 35px;
+}
+
+/* Cards style */
+#cards {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+  height: 380px;
+}
+
+.card {
+  display: inline-block;
+  overflow: hidden;
+  border: 1px solid rgba(225, 225, 226, 0.8);
+  box-shadow: 0px 0px 10px #ccc;
+  width: 283px;
+  text-align: center;
+  height: 320px;
+  padding: 25px;
+  margin-bottom: 10px;
+  font-family: Text;
+  color: #0e3c77;
+  transition: all 0.3s;
+}
+
+.card:not(.card:last-child) {
+  margin-right: 25px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card i {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.card h3 {
+  font-weight: bolder;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-size: 18px;
 }
 
 /* Animations */
@@ -76,3 +152,42 @@ header {
 }
 
 /* Responsive */
+@media (max-width: 1600px) {
+  .card {
+    width: 215px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 730px) {
+  header {
+    justify-content: flex-start;
+  }
+
+  #menu ul {
+    display: none;
+  }
+
+  .blog {
+    margin-left: 30px;
+  }
+
+  #banner h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 620px) {
+  #banner h2 {
+    font-size: 20px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}

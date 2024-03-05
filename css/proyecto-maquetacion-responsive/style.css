@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url("./img/pattern.png");
+}
+
 /* Header styles */
 header {
   display: flex;
@@ -96,7 +100,7 @@ header {
   width: 80%;
   margin: 0 auto;
   margin-top: 40px;
-  height: 380px;
+  height: auto;
 }
 
 .card {
@@ -112,6 +116,7 @@ header {
   font-family: Text;
   color: #0e3c77;
   transition: all 0.3s;
+  background-color: #fff;
 }
 
 .card:not(.card:last-child) {
@@ -136,6 +141,69 @@ header {
 
 .card p {
   font-size: 18px;
+}
+
+/* Main section styles */
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: auto;
+  margin-top: 50px;
+}
+
+#news {
+  flex-basis: 60%;
+}
+
+.title {
+  font-family: Headings;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  background-color: #dbdbdb;
+  padding: 10px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+#news .title {
+  font-size: 25px;
+  text-align: center;
+}
+
+.article-news {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border: 1px solid #dbdbdb;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0px 0px 10px 15px;
+  font-family: Text;
+}
+
+.article-news .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* Sidebar */
+#sidebar {
+    width: 20%;
+}
+
+.article-news .header h3 {
+  color: #0e3c77;
+  text-transform: capitalize;
+  padding-top: 10px;
+}
+
+.article-news .header time {
+  background-color: #616161;
+  padding: 10px;
+  color: #fff;
+  border-bottom-left-radius: 5px;
 }
 
 /* Animations */

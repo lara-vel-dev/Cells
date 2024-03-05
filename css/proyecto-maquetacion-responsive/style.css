@@ -1,0 +1,78 @@
+/* Import fonts  */
+@font-face {
+  font-family: Headings;
+  src: url("./fonts/BebasNeue.otf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  color: #fff;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  background-color: #222;
+  height: 70px;
+  align-items: center;
+  justify-content: space-around;
+  font-family: Headings;
+}
+
+.blog {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #00b3ff;
+  height: auto;
+  align-items: center;
+  padding: 5px 25px;
+}
+
+.blog h1 {
+  font-size: 30px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.blog i {
+  animation: rotate 2s linear .3s infinite;
+}
+
+#menu {
+  width: 25%;
+}
+
+#menu ul {
+  display: flex;
+  flex-grow: 1;
+  list-style: none;
+  justify-content: space-around;
+}
+
+#menu a {
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+/* Animations */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive */

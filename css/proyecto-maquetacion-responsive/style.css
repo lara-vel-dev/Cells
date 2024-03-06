@@ -294,32 +294,63 @@ form .link:first-of-type {
   height: auto;
   padding: 10px 0 0 15px;
   font-size: 22px;
+  position: relative;
 }
 
 .social i {
   display: block;
   margin-bottom: 10px;
   transition: all 0.3s;
+  padding-right: 12px;
 }
 
 .social i:hover {
   transform: translateX(6px);
 }
 
-.social i:hover:nth-child(1) {
+.social div:nth-child(1)>i:hover {
   color: #00b3ff;
 }
 
-.social i:hover:nth-child(2) {
+.social div:nth-child(2)>i:hover {
   color: #c837ac;
 }
 
-.social i:hover:nth-child(3) {
+.social div:nth-child(3)>i:hover {
   color: #1b70de;
 }
 
-.social i:hover:nth-child(4) {
+.social div:nth-child(4)>i:hover {
   color: #ea0404;
+}
+
+.hide {
+  position: absolute;
+  top: 10px;
+  font-size: 16px;
+  font-family: Text;
+  transition: all 0.3s;
+  opacity: 0;
+  z-index: -1;
+}
+
+.insta .hide {
+  position: absolute;
+  top: 42px;
+}
+
+.linkedin .hide {
+    top: 74px;
+}
+
+.youtube .hide {
+    top: 108px;
+}
+
+.social i:hover + .hide {
+  opacity: 1;
+  z-index: 1;
+  transform: translateX(40px);
 }
 
 .colab {
@@ -379,11 +410,11 @@ footer {
   text-decoration: none;
   color: #00b3ff;
   padding: 5px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .menu ul a:hover {
-    color: #fff;
+  color: #fff;
 }
 
 .location iframe {

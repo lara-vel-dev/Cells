@@ -245,6 +245,16 @@ form .link {
   margin-bottom: 5px;
   text-decoration: none;
   color: #616161;
+  transition: all 0.3s;
+}
+
+form .link:hover {
+  color: #00b3ff;
+  text-decoration: underline;
+}
+
+form input {
+  text-indent: 20px;
 }
 
 form .link:first-of-type {
@@ -264,6 +274,13 @@ form .link:first-of-type {
   border: 1px solid #dbdbdb;
   font-size: 17px;
   border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #0e3c77;
+  box-shadow: 0px 0px 10px #ccc;
 }
 
 .social {
@@ -282,6 +299,27 @@ form .link:first-of-type {
 .social i {
   display: block;
   margin-bottom: 10px;
+  transition: all 0.3s;
+}
+
+.social i:hover {
+  transform: translateX(6px);
+}
+
+.social i:hover:nth-child(1) {
+  color: #00b3ff;
+}
+
+.social i:hover:nth-child(2) {
+  color: #c837ac;
+}
+
+.social i:hover:nth-child(3) {
+  color: #1b70de;
+}
+
+.social i:hover:nth-child(4) {
+  color: #ea0404;
 }
 
 .colab {
@@ -340,6 +378,12 @@ footer {
   font-size: 18px;
   text-decoration: none;
   color: #00b3ff;
+  padding: 5px;
+  transition: all .3s;
+}
+
+.menu ul a:hover {
+    color: #fff;
 }
 
 .location iframe {
@@ -357,15 +401,15 @@ footer {
 }
 
 .images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .images img {
-    margin: 0 5px 20px;
-    width: 50px;
-    height: 50px;
+  margin: 0 5px 20px;
+  width: 50px;
+  height: 50px;
 }
 
 /* Animations */
@@ -381,10 +425,10 @@ footer {
   }
 }
 
-.created-by p{
-    font-family: Text;
-    text-align: center;
-    color: #fff;
+.created-by p {
+  font-family: Text;
+  text-align: center;
+  color: #fff;
 }
 
 /* Responsive */

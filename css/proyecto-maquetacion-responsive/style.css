@@ -17,6 +17,7 @@
 
 body {
   background-image: url("./img/pattern.png");
+  overflow-x: hidden;
 }
 
 /* Header styles */
@@ -235,8 +236,19 @@ form {
   box-shadow: 0px 0px 10px #ccc;
   height: auto;
   background-color: #fff;
-  padding: 0 0 30px 20px;
+  padding: 0 20px 30px 20px;
   font-family: Text;
+}
+
+form .link {
+  display: block;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: #616161;
+}
+
+form .link:first-of-type {
+  margin-top: 15px;
 }
 
 .buttons {
@@ -252,17 +264,6 @@ form {
   border: 1px solid #dbdbdb;
   font-size: 17px;
   border-radius: 3px;
-}
-
-form .link {
-  display: block;
-  margin-bottom: 5px;
-  text-decoration: none;
-  color: #616161;
-}
-
-form .link:first-of-type {
-  margin-top: 15px;
 }
 
 .social {
@@ -309,6 +310,64 @@ form .link:first-of-type {
   letter-spacing: 2px;
 }
 
+/* Footer styles */
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  margin-top: 30px;
+  background-color: #000;
+  flex-wrap: wrap;
+}
+
+.footer-container {
+  flex-basis: 30%;
+}
+
+.menu ul {
+  color: #fff;
+  padding-left: 20px;
+}
+
+.menu li {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #616161;
+  padding-bottom: 7px;
+}
+
+.menu ul a {
+  font-family: Text;
+  font-size: 18px;
+  text-decoration: none;
+  color: #00b3ff;
+}
+
+.location iframe {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.developed img {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.images img {
+    margin: 0 5px 20px;
+    width: 50px;
+    height: 50px;
+}
+
 /* Animations */
 @keyframes rotate {
   0% {
@@ -322,6 +381,12 @@ form .link:first-of-type {
   }
 }
 
+.created-by p{
+    font-family: Text;
+    text-align: center;
+    color: #fff;
+}
+
 /* Responsive */
 @media (max-width: 1600px) {
   .card {
@@ -332,6 +397,14 @@ form .link:first-of-type {
 @media (max-width: 1100px) {
   .card {
     width: 45%;
+  }
+
+  .buttons {
+    flex-flow: column wrap;
+  }
+
+  .btn {
+    margin-bottom: 7px;
   }
 }
 
@@ -361,6 +434,11 @@ form .link:first-of-type {
     flex-basis: 60%;
     flex-grow: 1;
   }
+
+  .images img {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media (max-width: 620px) {
@@ -370,5 +448,10 @@ form .link:first-of-type {
 
   .card {
     width: 100%;
+  }
+
+  .footer-container {
+    flex-basis: 100%;
+    flex-grow: 1;
   }
 }

@@ -1,0 +1,121 @@
+// Para ligar el archivo sass con un css se utiliza  sass --watch [carpeta]
+
+// Variables: manera de almacenar valores para posteriormente reusarlos
+$primary: #c1c1c1;
+$light_color: #fff;
+$dark-color: #000;
+
+// Interpolación
+$selector: '.hero';
+
+#{$selector} {
+	color: blue;
+}
+
+// Anidar elementos
+.hero {
+	background-color: red;
+	nav {
+		font-size: 1.5rem;
+		color: white;
+	}
+}
+
+// Para hacer un modulo debes poner _ en el archivo. _variables.scss
+// Para importar el módulo no es necesario poner la extensión, solo el nombre
+@use "variables";
+
+// Parent element
+.product-card {
+	color: teal;
+
+	&:hover {
+		color: crimson;
+	}
+}
+
+// Adicionales a los numeros, booleanos y strings existen otros valores 
+// Listas (contiene una secuencia de valores)
+$box-shadow: 1px, 1px, 1px;
+$list: 2rem 4rem 6rem;
+$fonts: [Arial][Verdana][Sans-serif];
+
+// Para acceder al valor de una lista es a través del módulo list
+@use 'sass:list';
+$margins: 10px 20px 15px 25px;
+
+// Mapas
+$colors: (
+	"primary": royalblue,
+	"alert": red,
+	"success": green
+);
+
+// Para acceder al valor de una lista es a través del módulo map
+@use "sass:map";
+$colors: (
+	"primary": royalblue,
+	"alert": red,
+	"success": green
+);
+
+// Estructuras de control
+// If
+$tema: oscuro;
+
+.contenedor {
+  @if $tema == oscuro {
+    background-color: #333;
+    color: #fff;
+  } @else {
+    background-color: #fff;
+    color: #333;
+  }
+}
+
+// For
+@for $i from 1 through 3 {
+  .columna-#{$i} {
+    width: 100px * $i;
+  }
+}
+
+// Each
+$colores: rojo, azul, verde;
+
+@each $color in $colores {
+  .caja-#{$color} {
+    background-color: $color;
+  }
+}
+
+// Mixin es una función
+@mixin boton($tipo) {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    @if $tipo == principal {
+      background-color: #3498db;
+      color: #fff;
+    } @else if $tipo == secundario {
+      background-color: #ecf0f1;
+      color: #333;
+    } @else if $tipo == resaltado {
+      background-color: #e74c3c;
+      color: #fff;
+    }
+}
+
+// Herencia
+%alert-normal {
+    border: 1px solid gray;
+    background-color: #ccc;
+    padding: 20px;
+    width: 100%;
+}
+
+.alert {
+    @extend %alert-normal;
+}

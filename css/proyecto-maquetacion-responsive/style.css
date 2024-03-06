@@ -188,11 +188,6 @@ header {
   margin-bottom: 10px;
 }
 
-/* Sidebar */
-#sidebar {
-    width: 20%;
-}
-
 .article-news .header h3 {
   color: #0e3c77;
   text-transform: capitalize;
@@ -204,6 +199,114 @@ header {
   padding: 10px;
   color: #fff;
   border-bottom-left-radius: 5px;
+}
+
+/* Sidebar */
+#sidebar {
+  width: 20%;
+  height: auto;
+}
+
+#sidebar .title {
+  margin-bottom: 0;
+}
+
+.input {
+  border: 1px solid #dbdbdb;
+  padding: 7px;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.icon {
+  position: relative;
+  left: 12%;
+  top: 25px;
+}
+
+.login {
+  margin-top: 20px;
+}
+
+form {
+  margin: 15px 0;
+  border: 1px solid #dbdbdb;
+  box-shadow: 0px 0px 10px #ccc;
+  height: auto;
+  background-color: #fff;
+  padding: 0 0 30px 20px;
+  font-family: Text;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-evenly;
+}
+
+.btn {
+  background-color: #00b3ff;
+  color: #fff;
+  padding: 10px 25px;
+  border: 1px solid #dbdbdb;
+  font-size: 17px;
+  border-radius: 3px;
+}
+
+form .link {
+  display: block;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: #616161;
+}
+
+form .link:first-of-type {
+  margin-top: 15px;
+}
+
+.social {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #dbdbdb;
+  box-shadow: 0px 0px 10px #ccc;
+  background-color: #fff;
+  height: auto;
+  padding: 10px 0 0 15px;
+  font-size: 22px;
+}
+
+.social i {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.colab {
+  margin: 0 auto;
+  margin-top: 15px;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  box-shadow: 0px 0px 10px #ccc;
+  width: 80%;
+  height: 320px;
+}
+
+.blog-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  margin: 30px 0;
+  width: 100%;
+  background-color: #fff;
+  font-family: Headings;
+  font-size: 25px;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  color: #0e3c77;
+  letter-spacing: 2px;
 }
 
 /* Animations */
@@ -247,6 +350,16 @@ header {
 
   #banner h2 {
     font-size: 25px;
+  }
+
+  #main {
+    padding: 20px;
+  }
+
+  #news,
+  #sidebar {
+    flex-basis: 60%;
+    flex-grow: 1;
   }
 }
 

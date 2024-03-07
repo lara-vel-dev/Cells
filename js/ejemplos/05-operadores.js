@@ -32,4 +32,4 @@ const diferenciaEstricta = 5 !== "5"; // true
 
 // Null y Undefined
 let numero; // undefinded (esta declarada pero no tiene valor)
-let numeroNull = null; // tipo objeto valor nulo
+let numeroNull = null; // es un objeto (valor nulo o inexistente)

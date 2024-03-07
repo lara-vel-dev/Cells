@@ -13,3 +13,4 @@ if (verdadero === true) {
 if (verdadero) {
   console.log("Valor verdadero");
 }
+

@@ -29,7 +29,6 @@ numeros.findIndex((num) => num % 2 !== 0); // Retorna en que índice se encuentr
 numeros.find((num) => num === 30); // Regresa el elemento encontrado
 numeros.filter((num) => num >= 20); // Filtra valores dependiento de una condición
 numero.concat(nums); // Une 1 o más arreglos
-
 Array.isArray(numeros); // Determina si el elemento es un arreglo
 
 // Recorrer arreglos

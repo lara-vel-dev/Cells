@@ -21,6 +21,15 @@ numeros.pop(); // Elimina el último elemento del arreglo y devuelve el elemento
 numeros.shift(); // Elimina el primer elemento del arreglo y devuelve el elemento
 numeros.splice(1, 1); // Elimina n valores a partir de una posición
 numeros.slice(); // Genera una copia del arreglo
+numeros.includes(3); // Determina si existe un valor en el arreglo
+numeros.some((num) => num % 2 === 0); // Comprueba si al menos 1 elemento cumple la condición
+numeros.every((num) => num % 2 !== 0); // Comprueba si la condición se cumple para todos los elementos del arreglo
+numeros.reduce((counter, num) => counter + num, 0); // Reduce un arreglo a un solo valor
+numeros.findIndex((num) => num % 2 !== 0); // Retorna en que índice se encuentra un elemento
+numeros.find((num) => num === 30); // Regresa el elemento encontrado
+numeros.filter((num) => num >= 20); // Filtra valores dependiento de una condición
+numero.concat(nums); // Une 1 o más arreglos
+
 Array.isArray(numeros); // Determina si el elemento es un arreglo
 
 // Recorrer arreglos

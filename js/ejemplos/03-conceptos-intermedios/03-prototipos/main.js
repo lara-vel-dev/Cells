@@ -49,6 +49,11 @@ function Persona(nombre, saldo, telefono) {
   Cliente.call(this, nombre, saldo);
   this.telefono = telefono;
 }
+
+// Se clona el prototipo con el constructor
+Persona.prototype = Object.create(Cliente.prototype);
+Persona.prototype.constructor = Cliente;
+
 const persona1 = new Persona("Persona 1", 8500, 1234567890);
 persona1.infoCliente();
 persona1.saludo();
